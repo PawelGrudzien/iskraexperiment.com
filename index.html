@@ -8,16 +8,16 @@
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="author" content="http://www.iskraexperiment.com/">
-		<meta name="description" content="A brand new experimental piano project from London, by Pawel Grudzien.">
-		<meta property="og:description" content="A brand new experimental piano project from London, by Pawel Grudzien.">
+		<meta name="description" content="A brand new experimental project from London by a multi-instrumentalist, composer and sound artist Pawel Grudzien.">
+		<meta property="og:description" content="A brand new experimental project from London by a multi-instrumentalist, composer and sound artist Pawel Grudzien.">
 		<meta property="og:image" content="http://www.iskraexperiment.com/img/thumbnail.jpg">
 		<meta property="og:locale" content="en">
 		<meta property="og:site_name" content="[is.kr/a]">
 		<meta property="og:title" content="[is.kr/a]">
 		<meta property="og:type" content="website">
 		<meta property="og:url" content="http://www.iskraexperiment.cp,/">
-		<meta property="article:published_time" content="2015-12-25T01:00:00Z">
-		<meta property="article:author" content="CJ Patoilo">
+		<meta property="article:published_time" content="2017-01-22T01:00:00Z">
+		<meta property="article:author" content="[is.kr/a]">
 		<meta property="article:section" content="website">
 		<meta name="twitter:card" content="summary_large_image">
 		<meta name="twitter:domain" content="[is.kr/a]">
@@ -25,7 +25,7 @@
 		<meta name="twitter:site" content="http://www.iskraexperiment.com/">
 		<meta name="twitter:creator" content="[is.kr/a]">
 		<meta name="twitter:title" content="[is.kr/a]">
-		<meta name="twitter:description" content="A brand new experimental piano project from London, by Pawel Grudzien.">
+		<meta name="twitter:description" content="A brand new experimental project from London by a multi-instrumentalist, composer and sound artist Pawel Grudzien.">
 		<meta name="twitter:image:src" content="http://www.iskraexperiment.com/img/thumbnail.jpg">
 		<title>[is.kr/a]</title>
 		<link rel="canonical" href="http://www.iskraexperiment.com/">
@@ -33,19 +33,24 @@
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=VT323">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
-		<link rel="stylesheet" href="css/milligram.min.css">
-		<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/lazyYT.css">
+		<link rel="stylesheet" href="./css/style.css">
 		<link rel="icon" href="img/favicon.png">
-	</head>
+    </head>
 	<body>
-
-		<main class="wrapper">
+    	<main class="wrapper">
 
 			<section class="container">
 				<p>> <strong>[is.kr/a]</strong></p>
 				<p>> A brand new experimental project from London</p>
 				<p>> by a multi-instrumentalist, composer and sound artist <a target="_new" href="http://www.pawelgrudzien.com">Pawel Grudzien</a></p>
 				<p>></p>
+
+        <!-- TPR summer 2016 video -->
+        <div class="lazyYT" data-youtube-id="S40asdvX3ag"  data-width="560" data-ratio="16:9" data-parameters="frameborder="0" allowfullscreen">loading...</div>
+
+        <!-- LINKS -->
+        <p>></p>
 				<p>> <a target="_new" href="http://fb.me/iskraexperiment">fb.me/iskraexperiment</a></p>
 				<p>> <a href="http://www.iskraexperiment.com">www.iskraexperiment.com</a></p>
 				<p>> <span class="blinking-cursor">|</p>
@@ -59,8 +64,16 @@
 
 		</main>
 
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/run_prettify.js"></script>
-		<script src="https://milligram.github.io/js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="./script/lazyYT.js"></script>
+    <script>
+        $( document ).ready(function() {
+          $('.lazyYT').lazyYT();
+        });
+    </script>
 
-	</body>
+
+
+
+  </body>
 </html>
