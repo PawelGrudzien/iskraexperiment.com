@@ -9,12 +9,11 @@
 .lazyYT-container {
   direction:ltr;
   position: relative;
-  display: block;
+  display: block;;
   height: 0;
   padding: 0 0 56.25% 0;
   overflow: hidden;
   background-color: #000000;
-  margin-left:14px;
 }
 
 .lazyYT-container iframe {
@@ -88,11 +87,21 @@
        -o-background-size: cover;
           background-size: cover;
 
-          filter: none;
+          filter: url(~"data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
             -webkit-filter: grayscale(100%);
             -moz-filter:    grayscale(100%);
             -ms-filter:     grayscale(100%);
             -o-filter:      grayscale(100%);
+            transition: all 200ms ease;
+          filter: gray;
+}
+
+.ytp-thumbnail:hover {
+  filter: none;
+    -webkit-filter: grayscale(0);
+    -moz-filter:    grayscale(0);
+    -ms-filter:     grayscale(0);
+    -o-filter:      grayscale(0);
 }
 
 /*
