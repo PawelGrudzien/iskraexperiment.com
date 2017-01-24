@@ -3,6 +3,16 @@ body {
 
 }
 
+.container {
+  max-width: 512px;
+  width: 100%;
+}
+
+.mirror-quote {
+  text-align: center;
+  font-size: 20px;
+}
+
 div.video-container {
   margin: 0 14px 0 14px;
   width: 90%;
