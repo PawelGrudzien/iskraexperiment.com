@@ -92,7 +92,7 @@
             -moz-filter:    grayscale(100%);
             -ms-filter:     grayscale(100%);
             -o-filter:      grayscale(100%);
-            transition: all 200ms ease;
+            transition: all 1000ms ease;
           filter: gray;
 }
 
