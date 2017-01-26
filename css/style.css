@@ -21,6 +21,11 @@ div.video-container {
   max-width: 512px;
 }
 
+div.image-container {
+	width: 100%;
+	max-width: 512px;
+}
+
 .image {
   width: 100%;
   max-width: 512px;
