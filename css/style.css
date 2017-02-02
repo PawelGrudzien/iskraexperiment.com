@@ -73,6 +73,8 @@ a:hover {
   background:black;
 }
 
+i {text-align:initial;}
+
 .blinking-cursor {
   font-weight: 100;
   /*font-size: 30px;
