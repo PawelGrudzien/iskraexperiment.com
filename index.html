@@ -36,26 +36,54 @@
     <link rel="stylesheet" href="./css/lazyYT.css">
 		<link rel="stylesheet" href="./css/style.css">
 		<link rel="icon" href="img/favicon.png">
+
+		<!-- SMOOTH SCROLL -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script>
+			$(function() {
+				$('a[href*=#]:not([href=#])').click(function() {
+    			if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+        		|| location.hostname == this.hostname) {
+
+        	var target = $(this.hash);
+        	target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+          	$('html,body').animate({
+            	scrollTop: target.offset().top
+            }, 1000);
+          return false;
+        	}
+    		}
+			});
+		});
+		</script>
+		<!-- End of SMOOTH SCROLL -->
+
     </head>
 	<body>
     	<main class="wrapper">
 
 			<section class="container">
-				<p>> <strong><a target="_new" href="http://www.iskraexperiment.com">[is.kr/a]</a></strong></p>
+				<h1>> <strong><a href="http://www.iskraexperiment.com">[is.kr/a]</a></strong> |
+				<a href="#media">Media</a> |
+				<a href="#concerts">Concerts</a> |
+				<a href="#contact">Contact</a></h1>
+
 				<p>> A brand new experimental project from London</br>
 					by a multi-instrumentalist, composer and sound artist <a target="_new" href="http://www.pawelgrudzien.com"><i class="fa fa-long-arrow-right"></i> Pawel Grudzien</a>
 				</p>
 				<p>></p>
 
-        <!-- TPR summer 2016 video -->
-				<p>> <strong>MEDIA</strong></p>
+
+				<h1 id="media">> <strong>MEDIA</strong></h1>
+				<!-- TPR summer 2016 video -->
 				<div class="video-container">
 					<div class="lazyYT" data-youtube-id="S40asdvX3ag" data-ratio="16:9" data-parameters="frameborder="0" allowfullscreen">loading...</div>
 				</div>
 
-				<!-- EVENTS -->
+				<!-- CONCERTS -->
 				<p>></p>
-				<p>> <strong>CONCERTS</strong></p>
+				<h1 id="concerts">> <strong>CONCERTS</strong></h1>
 				<p>> <strong>26 February 2017 | 7.00pm | <a target="_new" href="https://www.facebook.com/artjunctionlondon"><i class="fa fa-long-arrow-right"></i> Art Junction London</a></strong></br>
 					Meeting Rooms, 14 Neal’s Yard, Covent Garden, London WC2H 9DP</br>
 					More details TBC...
@@ -68,7 +96,7 @@
 
 				<!-- LINKS -->
         <p>></p>
-				<p>> <strong>CONTACT</strong></p>
+				<h1 id="contact">> <strong>CONTACT</strong></h1>
 
 				<p>> <a target="_new" href="http://fb.me/iskraexperiment"><i class="fa fa-facebook"></i></a>&nbsp;
 					<a target="_new" href="https://twitter.com/iskraexperiment"><i class="fa fa-twitter"></i></a>&nbsp;
@@ -78,7 +106,7 @@
 					<a target="_new" href="http://www.google.com/recaptcha/mailhide/d?k=01GrqcKIefclyoAtxVCZsobw==&amp;c=oIAeUQw8vtqmKEyHNcEmJcCq0qBiEZQKS-i2JrXLm08="><i class="fa fa-envelope-o"></i></a>
 				</p>
 
-				<p>> <a href="http://www.iskraexperiment.com"><i class="fa fa-long-arrow-right"></i> www.iskraexperiment.com</a></p>
+				<p>> <a href="http://www.iskraexperiment.com">www.iskraexperiment.com</a></p>
 
 				<p>> <span class="blinking-cursor">|</p>
 			</section>

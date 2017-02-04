@@ -36,12 +36,35 @@
     <link rel="stylesheet" href="./css/lazyYT.css">
 		<link rel="stylesheet" href="./css/style.css">
 		<link rel="icon" href="img/favicon.png">
+
+		<!-- SMOOTH SCROLL -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script>
+			$(function() {
+				$('a[href*=#]:not([href=#])').click(function() {
+    			if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+        		|| location.hostname == this.hostname) {
+
+        	var target = $(this.hash);
+        	target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+          	$('html,body').animate({
+            	scrollTop: target.offset().top
+            }, 1000);
+          return false;
+        	}
+    		}
+			});
+		});
+		</script>
+		<!-- End of SMOOTH SCROLL -->
+
     </head>
 	<body>
     	<main class="wrapper">
 
 			<section class="container">
-				<p>> <strong><a target="_new" href="http://www.iskraexperiment.com"><i class="fa fa-long-arrow-right"></i> [is.kr/a]</a></strong></p>
+				<h1>> <strong><a target="_new" href="http://www.iskraexperiment.com"><i class="fa fa-long-arrow-right"></i> [is.kr/a]</a></strong></h1>
 				<p>> A brand new experimental project from London</br>
 					by a multi-instrumentalist, composer and sound artist <a target="_new" href="http://www.pawelgrudzien.com"><i class="fa fa-long-arrow-right"></i> Pawel Grudzien</a>
 				</p>
@@ -50,7 +73,7 @@
 				<div class="image-mrrr-container"></div>
 
 				<!-- -->
-				<p>> <strong>M.R.R.R. - CROWDSOURCED VOICE RECORDING CAMPAIGN</strong></p>
+				<h1>> <strong>M.R.R.R. - CROWDSOURCED VOICE RECORDING CAMPAIGN</strong></h1>
 				<p>> Hey all, I am a sound artist and composer Pawel Grudzien
 					and I'm looking for some crowdsourced voice recordings for my new experimental project
 					<a target="_new" href="http://www.iskraexperiment.com">[is.kr/a]</a>.
@@ -61,10 +84,11 @@
 				<p>> <i>(it is a quote from the Bible - 1 Cor 13:12, also famously used in the amazing Japanese film Ghost in the shell).</i></p>
 				<p>> The recording needs to be quite slow, the whole sentence should be about 12 seconds long.
 					It does not have to be studio quality, but please try to keep the background noise to minimum.
-					All types of recording accepted: use your phone's voice memo app, your laptop's mic (Audacity is a good app to use),
+					All types of recording accepted: use your phone's voice memo app, your laptop's mic
+					(<a target="_new" href="http://www.audacityteam.org/"><i class="fa fa-long-arrow-right"></i> Audacity</a> is a good app to use),
 					professional condenser mic or whatever else you have.
 					Extra points for recordings on the old tape dictaphones or using any other old technology.
-					I prefer WAV or MP3 file format (although all other popular audio format will be accepted too).
+					I prefer WAV or MP3 file format (although all other popular audio formats will be accepted too).
 					Feel free to send a few versions if you feel like it :D</p>
 				<p>> You will be credited in the track artwork/description.<p>
 				<p>> Upload the file <a target="_new" href="https://www.dropbox.com/request/Ienvpt0DzhpH2iaXgTnK"><i class="fa fa-long-arrow-right"></i> here</a>.</p>
@@ -78,25 +102,23 @@
 					bandcamp and youtube in March under Creative Commons license (free for anyone to download and remix).
 					I will send you an email notification once this happens.
 					I am also considering a release on iTunes/Spotify/Google Music and similar services.</p>
-				<p>> Please share this page to spread the word. For new music and to find out more about
-					<a target="_new" href="http://www.iskraexperiment.com">[is.kr/a]</a>
-					and	get the most up to date information about this and my other projects
-					please like my <i class="fa fa-long-arrow-right"></i> facebook page,
-					follow me on <i class="fa fa-long-arrow-right"></i> twitter,
-					<i class="fa fa-long-arrow-right"></i> instagram
-					and subscribe to my <i class="fa fa-long-arrow-right"></i> youtube channel.</p>
+				<p>> Please share this page to spread the word. For new music and to get the most up to date information about this and my other projects
+					please follow [is.kr/a] using the <a href="#contact"><i class="fa fa-long-arrow-right"></i> links</a> below.</p>
 				<p>> Thank you!</p>
 				<p>> All the best,</br>Pawel</br>aka [is.kr/a]</p>
 				<p>> Small print:</p>
 				<p>> This project is a labour of love for me and as such it is not for profit.
 					I can't offer you any financial retribution (I wish a could).
-					Any potential bandcamp donations (if I'm lucky!) go towards the running costs of my studio.
-					You will be credited for your work (i.e. I wll put your name in the description of the track).</p>
+					Any potential donations (if I'm lucky!) go towards the running costs of my studio.
+					You will be credited for your work (i.e. I wll put your name in the description of the track).
+					I reserve the right to change the concept of the project and not use the submitted samples
+					if the quality is not sufficient.
+				</p>
 				<p>></p>
 
 				<!-- LINKS -->
         <p>></p>
-				<p>> <strong>CONTACT</strong></p>
+				<h1 id="contact">> <strong>CONTACT</strong></h1>
 
 				<p>> <a target="_new" href="http://fb.me/iskraexperiment"><i class="fa fa-facebook"></i></a>&nbsp;
 					<a target="_new" href="https://twitter.com/iskraexperiment"><i class="fa fa-twitter"></i></a>&nbsp;
@@ -106,7 +128,7 @@
 					<a target="_new" href="http://www.google.com/recaptcha/mailhide/d?k=01GrqcKIefclyoAtxVCZsobw==&amp;c=oIAeUQw8vtqmKEyHNcEmJcCq0qBiEZQKS-i2JrXLm08="><i class="fa fa-envelope-o"></i></a>
 				</p>
 
-				<p>> <a href="http://www.iskraexperiment.com"><i class="fa fa-long-arrow-right"></i> www.iskraexperiment.com</a></p>
+				<p>> <a href="http://www.iskraexperiment.com">www.iskraexperiment.com</a></p>
 
 				<p>> <span class="blinking-cursor">|</p>
 			</section>
